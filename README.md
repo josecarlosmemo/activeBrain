@@ -5,7 +5,8 @@
 `components`: En esta carpeta van todos los componentes que comprenden
 otros componentes o otras partes de la aplicación. Si un componente esta
 conformado por varios otros componentes van dentro de una carpeta coon
-el nombre del componente.
+el nombre del componente. También componentes cuenta con sub-carpetas
+especificando el tipo de componente del cual se trata.
 
 **Ejemplo:**
 
