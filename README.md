@@ -27,3 +27,21 @@ Se debe utilizar PascalCase, es decir, la primer letra de cada palabra
 va en mayuscula. Como si fuera una clase. **Ejemplo:**
 
     MenuPrincipal
+
+## Fluyo de Navegación
+
+``` mermaid
+
+graph
+
+Welcome --> |MainNavigation| Login
+Welcome --> |MainNavigation| Register
+
+Login --> |TODO Incia Sesión| Home
+Register --> |TODO Registro| Home
+
+Home --> |TODO Cierra Sesión| Welcome
+Home -->|TODO Click en Paciente| PerfilPaciente
+Home --> |TODO NavBar de Doctor| PruebaRapida
+Home --> Calendario
+```
