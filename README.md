@@ -1,5 +1,17 @@
 # ActiveBrain Front-End
 
+## Ejecución
+
+Una vez dentro de la carpeta `activeBrain`:
+
+``` bash
+npm install # Bajamos paquetes
+```
+
+``` bash
+npm start # Corremos el proyecto en el browser
+```
+
 ## Estructura de Carpetas
 
 `components`: En esta carpeta van todos los componentes que comprenden
@@ -36,6 +48,10 @@ graph
 
 Welcome --> |MainNavigation| Login
 Welcome --> |MainNavigation| Register
+
+Login --> |MainNavigation| Welcome
+Register --> |MainNavigation| Welcome
+
 
 Login --> |TODO Incia Sesión| Home
 Register --> |TODO Registro| Home

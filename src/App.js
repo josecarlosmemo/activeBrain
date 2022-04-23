@@ -10,8 +10,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Navigate reaplace to="/welcome" />} />
-        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
