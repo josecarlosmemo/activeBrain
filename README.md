@@ -7,6 +7,8 @@ otros componentes o otras partes de la aplicación. Si un componente esta
 conformado por varios otros componentes van dentro de una carpeta coon
 el nombre del componente.
 
+`pages`: Aquí van los componentes que representan una página completa.
+
 **Ejemplo:**
 
     components/MiComponente/PiezaComponente.js
