@@ -3,10 +3,10 @@ import React, { Fragment } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
 
 const unityContext = new UnityContext({
-  loaderUrl: "/assets/unity/Build/unity.loader.js",
-  dataUrl: "/assets/unity/Build/unity.data.unityweb",
-  frameworkUrl: "/assets/unity/Build/unity.framework.js.unityweb",
-  codeUrl: "/assets/unity/Build/unity.wasm.unityweb",
+  loaderUrl: "/assets/unity/unity.loader.js",
+  dataUrl: "/assets/unity/unity.data.unityweb",
+  frameworkUrl: "/assets/unity/unity.framework.js.unityweb",
+  codeUrl: "/assets/unity/unity.wasm.unityweb",
 });
 
 function PruebaRapida() {
