@@ -85,7 +85,11 @@ function LoginForm() {
         )}
       </div>
       <div className={styles["form-actions"]}>
-        <button className={styles["button"]} type="submit">
+        <button
+          disabled={!isFormValid}
+          className={styles["button"]}
+          type="submit"
+        >
           Iniciar Sesión
         </button>
       </div>

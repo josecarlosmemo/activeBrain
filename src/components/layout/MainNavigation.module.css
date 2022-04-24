@@ -11,6 +11,8 @@
 .logo {
   font-size: 2rem;
   color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav ul {

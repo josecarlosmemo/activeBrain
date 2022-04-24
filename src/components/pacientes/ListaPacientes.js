@@ -9,7 +9,11 @@ function ListaPacientes() {
       <h2>Lista de Pacientes</h2>
       <ul>
         {pacientes.map((paciente) => (
-          <PacienteItem key={paciente.id} paciente={paciente} />
+          <PacienteItem
+            key={paciente.id}
+            nombre={paciente.nombre + paciente.apellidoP}
+            edad={paciente.edad}
+          />
         ))}
       </ul>
     </section>
