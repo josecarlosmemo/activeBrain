@@ -1,6 +1,6 @@
 import React from "react";
 import useInput from "../../hooks/use-input";
-import styles from "./LoginForm.module.css";
+import styles from "./Form.module.css";
 import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
