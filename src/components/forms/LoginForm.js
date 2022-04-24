@@ -1,7 +1,11 @@
 import React from "react";
 import useInput from "../../hooks/use-input";
+import styles from "./LoginForm.module.css";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
+  const navigate = useNavigate();
+
   const {
     value: enteredEmail,
     hasError: emailHasError,
@@ -34,13 +38,19 @@ function LoginForm() {
     console.log(`Correo: ${enteredEmail}`);
     console.log(`Contraseña: ${enteredPassword}`);
 
+    navigate("/home");
+
     emailReset();
     passwordReset();
   };
 
   return (
     <form onSubmit={submitFormHandler}>
-      <div>
+      <div
+        className={`${styles["form-control"]} ${
+          emailHasError && styles["invalid"]
+        }`}
+      >
         <label htmlFor="email">Correo Electrónico</label>
         <input
           id="email"
@@ -49,9 +59,17 @@ function LoginForm() {
           value={enteredEmail}
           type="email"
         />
-        {emailHasError && <p>Ingrese un Correo Electrónico válido.</p>}
+        {emailHasError && (
+          <p className={styles["error-text"]}>
+            Ingrese un Correo Electrónico válido.
+          </p>
+        )}
       </div>
-      <div>
+      <div
+        className={`${styles["form-control"]} ${
+          passordHasError && styles["invalid"]
+        }`}
+      >
         <label htmlFor="password">Contraseña</label>
         <input
           id="password"
@@ -60,10 +78,16 @@ function LoginForm() {
           value={enteredPassword}
           type="password"
         />
-        {passordHasError && <p>La contraseña no puede estar vacía.</p>}
+        {passordHasError && (
+          <p className={styles["error-text"]}>
+            La contraseña no puede estar vacía.
+          </p>
+        )}
       </div>
-      <div>
-        <button type="submit">Iniciar Sesión</button>
+      <div className={styles["form-actions"]}>
+        <button className={styles["button"]} type="submit">
+          Iniciar Sesión
+        </button>
       </div>
     </form>
   );
