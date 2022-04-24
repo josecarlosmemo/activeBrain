@@ -1,11 +1,15 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import LoginForm from "../components/forms/LoginForm";
+import Card from "../components/UI/Card";
 
 function Login() {
   return (
     <Fragment>
-      <h1>Login Page</h1>
-      <Link to="/home">Home</Link>
+      <h1>Iniciar Sesión</h1>
+      <Card>
+        <LoginForm />
+      </Card>
     </Fragment>
   );
 }
