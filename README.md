@@ -15,7 +15,7 @@
 <h3 align="center">ActiveBrain</h3>
 
   <p align="center">
-    It is an interactive and efficient project, which is used to perform a mini-mental test. The mini-mental test is a test used to assess cognitive impairment and dementia.
+    An interactive and efficient project, which is used to perform a mini-mental test. The mini-mental test is a test used to assess cognitive impairment and dementia.
     <br />
     <a href="https://github.com/josecarlosmemo/activeBrain"><strong>Explore the docs »</strong></a>
     <br />
